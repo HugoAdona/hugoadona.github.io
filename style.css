@@ -2,17 +2,22 @@ html {
     box-sizing: border-box;
     font-size: 100%;
 }
-
 *, *::before, *::after {
     box-sizing: inherit;
 }
-
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #333333;
     color: white;
 }
-
 a{
     text-decoration: none;
 }
+img {
+    filter: brightness(1);
+    transition: filter 0.3s;
+}
+img:not(.no-hover):hover {
+    filter: brightness(0.7);
+}
+
