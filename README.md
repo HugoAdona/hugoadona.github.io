@@ -1,5 +1,34 @@
 # Portfolio
 
-## Description
-This is my personal portfolio website showcasing my projects and skills. Built using HTML & CSS.
-You can check it out right now at [hugoadona.github.io](https://hugoadona.github.io/)
+Welcome to my portfolio website!
+
+## About
+
+This repository hosts the code for my personal portfolio website. It showcases my projects, skills, experiences, and more.
+
+## Website Link
+
+You can view my portfolio website [here](https://hugoadona.github.io/).
+
+## Repository Structure
+
+- **index.html**: Main HTML file containing the structure of the portfolio website.
+- **styles**: Directory containing CSS files for styling the website.
+- **assets**: Directory containing images, icons, and other resources used in the website.
+- **LICENSE**: License file specifying the terms under which this repository is distributed.
+
+## Usage
+
+Feel free to explore the code and structure of my portfolio website. If you find anything interesting or have any suggestions for improvement, please don't hesitate to let me know!
+
+## Contributing
+
+Contributions are not currently accepted for this repository as it primarily serves as a showcase for my personal portfolio website. However, feedback and suggestions are always welcome.
+
+## License
+
+This repository is licensed under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+I would like to express my gratitude to my family and friends for their support and the YouTube channel "Coder Coder" for the guidance in creating this portfolio website.
