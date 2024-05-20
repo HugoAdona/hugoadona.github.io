@@ -24,11 +24,3 @@ Feel free to explore the code and structure of my portfolio website. If you find
 ## Contributing
 
 Contributions are not currently accepted for this repository as it primarily serves as a showcase for my personal portfolio website. However, feedback and suggestions are always welcome.
-
-## License
-
-This repository is licensed under the [MIT License](LICENSE).
-
-## Acknowledgements
-
-I would like to express my gratitude to my family and friends for their support and the YouTube channel "Coder Coder" for the guidance in creating this portfolio website.
