@@ -10,8 +10,35 @@ html {
 
 /* Set font family and colors */
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Arial;
     background-color: #333333;
+    color: white;
+    margin: 0; /* Remove default body margin */
+}
+
+/* Circle styling */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust based on desired vertical space */
+    margin-top: 20px; /* Adjust for spacing from top */
+}
+
+.circle {
+    width: 180px; /* Size of the circle */
+    height: 180px; /* Size of the circle */
+    border: 5px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1; /* Adjust line-height to reduce vertical padding */
+}
+
+.circle-text {
+    font-size: 5rem; /* Increased font size */
+    font-weight: 900;
     color: white;
 }
 
@@ -30,7 +57,7 @@ img {
 }
 
 /* Apply hover effect on images */
-img:not(.no-hover):hover {
+img:hover {
     filter: brightness(0.7);
 }
 
