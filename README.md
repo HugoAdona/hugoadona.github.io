@@ -1,17 +1,25 @@
-# Portfolio
+# Hugo Adona • Portfolio
 
-Welcome to my portfolio website!
+## Installation
 
-## About
+This project is a static HTML and CSS website, so there is no installation required. Simply open the `index.html` file in a web browser to view the portfolio.
 
-This repository hosts the code for my personal portfolio website. It showcases my projects, skills, experiences, and more.
+## Usage
 
-## Website Link
+The portfolio website showcases Hugo Adona's work as a student developer. Users can navigate through the site to learn more about Hugo, view his featured projects, and find links to his social media profiles.
 
-You can view my portfolio website [here](https://hugoadona.github.io/).
+## API
 
-## Repository Structure
+This project does not have any APIs.
 
-- **index.html**: Main HTML file containing the structure of the portfolio website.
-- **styles**: Directory containing CSS files for styling the website.
-- **assets**: Directory containing images, icons, and other resources used in the website.
+## Contributing
+
+This is a personal portfolio website, so contributions are not accepted. However, users are welcome to explore the code and provide feedback.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Testing
+
+This project does not have any automated tests. The website has been manually tested to ensure it functions correctly across different screen sizes and web browsers.
