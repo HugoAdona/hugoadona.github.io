@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   font-size: 100%;
   scrollbar-width: thin;
-  scrollbar-color: rgba(65, 67, 69, 1) rgba(35, 37, 38, 1);
+  scrollbar-color: rgba(65,67,69,1) rgba(35,37,38,1);
 }
 
 *,
@@ -19,14 +19,10 @@ img {
 
 body {
   font-family: "Montserrat", Arial;
-  background: rgb(35, 37, 38);
-  background: linear-gradient(
-    360deg,
-    rgba(35, 37, 38, 1) 0%,
-    rgba(65, 67, 69, 1) 35%
-  );
+  background: linear-gradient(360deg, rgba(35,37,38,1) 0%, rgba(65,67,69,1) 35%);
   color: white;
   margin: 0;
+  line-height: 1.6;
 }
 
 body::-webkit-scrollbar {
@@ -34,13 +30,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: rgba(35, 37, 38, 1);
+  background: rgba(35,37,38,1);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgba(65, 67, 69, 1);
+  background-color: rgba(65,67,69,1);
   border-radius: 10px;
-  border: 3px solid rgba(35, 37, 38, 1);
+  border: 3px solid rgba(35,37,38,1);
 }
 
 .triangle-container {
@@ -54,9 +50,9 @@ body::-webkit-scrollbar-thumb {
 .triangle {
   width: 0;
   height: 0;
-  border-left: 70px solid transparent !important;
-  border-right: 70px solid transparent !important;
-  border-bottom: 130px solid white !important;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 130px solid white;
   animation: zoomIn 1s ease-out;
 }
 
@@ -70,39 +66,33 @@ img {
   animation: fadeIn 2s forwards;
 }
 
-.social-icon {
-  border-radius: 0;
-}
-
 img:hover {
-  filter: brightness(0.6);
+  filter: brightness(0.60);
 }
 
 img:active {
-  filter: brightness(0.4);
+  filter: brightness(0.40);
 }
 
 hr {
   width: 320px;
-  opacity: 0.3;
+  opacity: 0.2;
   animation: slideIn 1s ease-out;
 }
 
-h1,
-h2,
-h3,
-p {
+h1, h2, h3, p {
   text-align: center;
   animation: slideIn 1s ease-out;
+  margin: 10px 0;
 }
 
-#linkButton:link,
-#linkButton:visited {
+#linkButton {
   border: 2px solid white;
   border-radius: 5px;
   color: white;
   text-decoration: none;
   padding: 8px 24px;
+  font-size: 1em;
 }
 
 #linkButton:hover {
@@ -160,9 +150,7 @@ p {
 
 @media (max-width: 399px) {
   .triangle {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 36px solid white;
+    border-width: 20px 20px 36px;
   }
   .image-links-container img {
     width: 24px;
@@ -174,13 +162,19 @@ p {
   hr {
     width: 150px;
   }
+  h1 { font-size: 1.75em; }
+  h2 { font-size: 1.5em; }
+  h3 { font-size: 1.25em; }
+  p { font-size: 1em; }
+  #linkButton {
+    padding: 6px 18px;
+    font-size: 0.9em;
+  }
 }
 
 @media (min-width: 400px) and (max-width: 600px) {
   .triangle {
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 54px solid white;
+    border-width: 30px 30px 54px;
   }
   .image-links-container img {
     width: 32px;
@@ -189,19 +183,22 @@ p {
   .image-links-container a {
     margin: 0 3px;
   }
-  .image-links-container {
-    margin-top: 10px;
-  }
   hr {
     width: 200px;
+  }
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.75em; }
+  h3 { font-size: 1.5em; }
+  p { font-size: 1.1em; }
+  #linkButton {
+    padding: 7px 20px;
+    font-size: 1em;
   }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
   .triangle {
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-bottom: 72px solid white;
+    border-width: 40px 40px 72px;
   }
   .image-links-container img {
     width: 36px;
@@ -213,13 +210,19 @@ p {
   hr {
     width: 240px;
   }
+  h1 { font-size: 2.25em; }
+  h2 { font-size: 2em; }
+  h3 { font-size: 1.75em; }
+  p { font-size: 1.2em; }
+  #linkButton {
+    padding: 8px 22px;
+    font-size: 1.1em;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .triangle {
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 90px solid white;
+    border-width: 50px 50px 90px;
   }
   .image-links-container img {
     width: 40px;
@@ -231,13 +234,19 @@ p {
   hr {
     width: 260px;
   }
+  h1 { font-size: 2.5em; }
+  h2 { font-size: 2.25em; }
+  h3 { font-size: 2em; }
+  p { font-size: 1.3em; }
+  #linkButton {
+    padding: 9px 24px;
+    font-size: 1.2em;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .triangle {
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-    border-bottom: 108px solid white;
+    border-width: 60px 60px 108px;
   }
   .image-links-container img {
     width: 48px;
@@ -249,13 +258,19 @@ p {
   hr {
     width: 310px;
   }
+  h1 { font-size: 2.75em; }
+  h2 { font-size: 2.5em; }
+  h3 { font-size: 2.25em; }
+  p { font-size: 1.4em; }
+  #linkButton {
+    padding: 10px 26px;
+    font-size: 1.3em;
+  }
 }
 
 @media (min-width: 1441px) {
   .triangle {
-    border-left: 70px solid transparent;
-    border-right: 70px solid transparent;
-    border-bottom: 126px solid white;
+    border-width: 70px 70px 126px;
   }
   .image-links-container img {
     width: 56px;
@@ -266,5 +281,13 @@ p {
   }
   hr {
     width: 360px;
+  }
+  h1 { font-size: 3em; }
+  h2 { font-size: 2.75em; }
+  h3 { font-size: 2.5em; }
+  p { font-size: 1.5em; }
+  #linkButton {
+    padding: 11px 28px;
+    font-size: 1.4em;
   }
 }
