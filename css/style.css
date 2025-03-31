@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   font-size: 100%;
   scrollbar-width: thin;
-  scrollbar-color: white transparent;
+  scrollbar-color: rgba(65, 67, 69, 1) rgba(35, 37, 38, 1);
 }
 
 *,
@@ -19,12 +19,31 @@ img {
 
 body {
   font-family: "Montserrat", Arial;
-  background-color: #333333;
+  background: rgb(35, 37, 38);
+  background: linear-gradient(
+    360deg,
+    rgba(35, 37, 38, 1) 0%,
+    rgba(65, 67, 69, 1) 35%
+  );
   color: white;
   margin: 0;
 }
 
-.circle-container {
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(35, 37, 38, 1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(65, 67, 69, 1);
+  border-radius: 10px;
+  border: 3px solid rgba(35, 37, 38, 1);
+}
+
+.triangle-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,24 +51,12 @@ body {
   margin-top: 20px;
 }
 
-.circle {
-  width: 180px;
-  height: 180px;
-  border: 5px solid white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 1;
-  animation: zoomIn 1s ease-out;
-}
-
 .triangle {
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 90px solid white;
+  border-left: 70px solid transparent !important;
+  border-right: 70px solid transparent !important;
+  border-bottom: 130px solid white !important;
   animation: zoomIn 1s ease-out;
 }
 
@@ -68,23 +75,16 @@ img {
 }
 
 img:hover {
-  filter: brightness(0.65);
+  filter: brightness(0.6);
 }
 
 img:active {
-  filter: brightness(0.45);
-}
-
-a {
-  text-decoration: none;
-  color: white;
+  filter: brightness(0.4);
 }
 
 hr {
   width: 320px;
-  opacity: 0.4;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  opacity: 0.3;
   animation: slideIn 1s ease-out;
 }
 
@@ -98,11 +98,11 @@ p {
 
 #linkButton:link,
 #linkButton:visited {
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 5px;
   color: white;
   text-decoration: none;
-  padding: 7px 21px;
+  padding: 8px 24px;
 }
 
 #linkButton:hover {
@@ -159,14 +159,10 @@ p {
 }
 
 @media (max-width: 399px) {
-  .circle {
-    width: 100px;
-    height: 100px;
-  }
   .triangle {
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 45px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 36px solid white;
   }
   .image-links-container img {
     width: 24px;
@@ -181,14 +177,10 @@ p {
 }
 
 @media (min-width: 400px) and (max-width: 600px) {
-  .circle {
-    width: 120px;
-    height: 120px;
-  }
   .triangle {
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    border-bottom: 60px solid white;
+    border-bottom: 54px solid white;
   }
   .image-links-container img {
     width: 32px;
@@ -206,14 +198,10 @@ p {
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
-  .circle {
-    width: 140px;
-    height: 140px;
-  }
   .triangle {
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
-    border-bottom: 70px solid white;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 72px solid white;
   }
   .image-links-container img {
     width: 36px;
@@ -228,14 +216,10 @@ p {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .circle {
-    width: 150px;
-    height: 150px;
-  }
   .triangle {
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-bottom: 80px solid white;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 90px solid white;
   }
   .image-links-container img {
     width: 40px;
@@ -250,14 +234,10 @@ p {
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .circle {
-    width: 180px;
-    height: 180px;
-  }
   .triangle {
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 90px solid white;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 108px solid white;
   }
   .image-links-container img {
     width: 48px;
@@ -272,14 +252,10 @@ p {
 }
 
 @media (min-width: 1441px) {
-  .circle {
-    width: 200px;
-    height: 200px;
-  }
   .triangle {
-    border-left: 55px solid transparent;
-    border-right: 55px solid transparent;
-    border-bottom: 100px solid white;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 126px solid white;
   }
   .image-links-container img {
     width: 56px;
