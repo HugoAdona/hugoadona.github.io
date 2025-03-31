@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb {
   height: 0;
   border-left: 70px solid transparent;
   border-right: 70px solid transparent;
-  border-bottom: 130px solid white;
+  border-bottom: 120px solid white;
   animation: zoomIn 1s ease-out;
 }
 
@@ -148,146 +148,53 @@ h1, h2, h3, p {
   }
 }
 
-@media (max-width: 399px) {
+@media (max-width: 768px) {
+  .triangle-container {
+    height: 150px;
+  }
+
   .triangle {
-    border-width: 20px 20px 36px;
+    border-left-width: 50px;
+    border-right-width: 50px;
+    border-bottom-width: 90px;
   }
-  .image-links-container img {
-    width: 24px;
-    height: 24px;
-  }
-  .image-links-container a {
-    margin: 0 2px;
-  }
+
   hr {
-    width: 150px;
+    width: 240px;
   }
-  h1 { font-size: 1.75em; }
-  h2 { font-size: 1.5em; }
-  h3 { font-size: 1.25em; }
-  p { font-size: 1em; }
+
+  h1, h2, h3, p {
+    font-size: 1.2em;
+  }
+
   #linkButton {
     padding: 6px 18px;
     font-size: 0.9em;
   }
 }
 
-@media (min-width: 400px) and (max-width: 600px) {
+@media (max-width: 480px) {
+  .triangle-container {
+    height: 100px;
+  }
+
   .triangle {
-    border-width: 30px 30px 54px;
+    border-left-width: 35px;
+    border-right-width: 35px;
+    border-bottom-width: 60px;
   }
-  .image-links-container img {
-    width: 32px;
-    height: 32px;
-  }
-  .image-links-container a {
-    margin: 0 3px;
-  }
+
   hr {
-    width: 200px;
+    width: 180px;
   }
-  h1 { font-size: 2em; }
-  h2 { font-size: 1.75em; }
-  h3 { font-size: 1.5em; }
-  p { font-size: 1.1em; }
-  #linkButton {
-    padding: 7px 20px;
+
+  h1, h2, h3, p {
     font-size: 1em;
   }
-}
 
-@media (min-width: 601px) and (max-width: 768px) {
-  .triangle {
-    border-width: 40px 40px 72px;
-  }
-  .image-links-container img {
-    width: 36px;
-    height: 36px;
-  }
-  .image-links-container a {
-    margin: 0 4px;
-  }
-  hr {
-    width: 240px;
-  }
-  h1 { font-size: 2.25em; }
-  h2 { font-size: 2em; }
-  h3 { font-size: 1.75em; }
-  p { font-size: 1.2em; }
   #linkButton {
-    padding: 8px 22px;
-    font-size: 1.1em;
+    padding: 4px 12px;
+    font-size: 0.8em;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .triangle {
-    border-width: 50px 50px 90px;
-  }
-  .image-links-container img {
-    width: 40px;
-    height: 40px;
-  }
-  .image-links-container a {
-    margin: 0 5px;
-  }
-  hr {
-    width: 260px;
-  }
-  h1 { font-size: 2.5em; }
-  h2 { font-size: 2.25em; }
-  h3 { font-size: 2em; }
-  p { font-size: 1.3em; }
-  #linkButton {
-    padding: 9px 24px;
-    font-size: 1.2em;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .triangle {
-    border-width: 60px 60px 108px;
-  }
-  .image-links-container img {
-    width: 48px;
-    height: 48px;
-  }
-  .image-links-container a {
-    margin: 0 6px;
-  }
-  hr {
-    width: 310px;
-  }
-  h1 { font-size: 2.75em; }
-  h2 { font-size: 2.5em; }
-  h3 { font-size: 2.25em; }
-  p { font-size: 1.4em; }
-  #linkButton {
-    padding: 10px 26px;
-    font-size: 1.3em;
-  }
-}
-
-@media (min-width: 1441px) {
-  .triangle {
-    border-width: 70px 70px 126px;
-  }
-  .image-links-container img {
-    width: 56px;
-    height: 56px;
-  }
-  .image-links-container a {
-    margin: 0 8px;
-  }
-  hr {
-    width: 360px;
-  }
-  h1 { font-size: 3em; }
-  h2 { font-size: 2.75em; }
-  h3 { font-size: 2.5em; }
-  p { font-size: 1.5em; }
-  #linkButton {
-    padding: 11px 28px;
-    font-size: 1.4em;
-  }
-}
