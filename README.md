@@ -1,7 +1,7 @@
-# Profile Page
+# Portfolio
 
-A simple profile page created for me.
+My portfolio for future skills, experiences and projects
 
 ## Appendix
 
-This is just a quick page I have created. I am still learning and soon I will make a better website for myself.
+This used to be a just a profile page now turned to a portfolio for future skills, experiences and projects. I will keep updating this portfolio because I am still learning, but I will get there!
