@@ -1,0 +1,70 @@
+body {
+  background-color: #29323c;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 0.5;
+}
+
+img[src*="https://placehold.co/600x400"]
+{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  gap: 10px;
+}
+
+a {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.nav-container {
+  border-bottom: 1px solid white;
+  width: 100%;
+  margin: 10px;
+}
+
+.nav {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.nav:hover {
+  font-weight: bold;
+}
