@@ -11,26 +11,6 @@ body {
   text-align: center;
 }
 
-img {
-  width: 180px;
-  height: 180px;
-  border-radius: 100px;
-  margin-top: 20px;
-}
-
-h1,
-h2 {
-  line-height: 0.5;
-}
-
-table,
-th,
-td {
-  border: 1px solid white;
-  border-collapse: collapse;
-  line-height: 1.5;
-}
-
 .link-container {
   display: flex;
   flex-direction: row;
@@ -56,6 +36,8 @@ a {
 }
 
 .nav {
+  color: white;
+  text-decoration: none;
   font-size: 16px;
   font-weight: normal;
 }
