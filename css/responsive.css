@@ -13,19 +13,40 @@
     position: absolute;
     right: 0;
     padding: 0 3rem;
+    margin: 1rem 0;
     top: 75px;
     background-color: rgba(41, 50, 60, 0.5);
-    backdrop-filter: blur(5px);
     display: none;
     transition: all 0.25s;
+    width: 100%;
+    text-align: center;
+    
   }
 
   .menu .menu-list {
     flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
+  
+  .menu-list .menu-list-items {
+    padding: 0.8rem 0;
   }
 
   .portfolio {
-    padding: 0;
+    padding: 0 2rem;
+  }
+
+  .port-card .image {
+    width: 100%;
+  }
+
+  .port-card .image img {
+    border-radius: 25px 25px 20px 20px;
+    height: 200px;
+    width: 90%;
+    object-fit: cover;
+    padding-top: 10px;
   }
 
   .about {
@@ -34,28 +55,77 @@
 
   .about .about-text {
     padding: 2rem;
+    width: auto;
   }
 
   .about .about-image img {
     padding: 2rem;
+    width: 80%;
+    height: auto;
   }
 
   .services {
-    padding: 0;
+    padding: 0 2rem;
   }
 
   .my-row {
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
   }
 
   .my-row .my-col {
-    text-align: center;
-    width: 35%;
+    width: 45%;
+  }
+  
+  /* Make service cards the same height */
+  .services .my-card {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .services .small-para {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Center contact form */
+  .contact {
+    padding: 0 2rem;
+  }
+  
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-form-container {
+    width: 80%;
+  }
+  
+  .contact-form .form-controls {
+    width: 100%;
+  }
+  
+  .contact-form .form-btn {
+    width: 100%;
+  }
+  
+  /* Social media icons */
+  .social-links {
+    width: 100%;
+  }
+  
+  .footer-menu-list {
+    padding-left: 0;
+    justify-content: center;
   }
 }
 
 /* CSS for mobile devices */
-@media screen and (min-width: 280px) and (max-width: 576px) {
+@media screen and (min-width: 280px) and (max-width: 575px) {
   .sub-heading {
     color: #fff9f9cc;
   }
@@ -69,31 +139,61 @@
   }
 
   .logo {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
+  }
+  
+  .logo .logo-heading {
+    font-size: 1.5rem;
   }
 
   .menu {
     position: absolute;
     right: 0;
-    padding: 0 2rem;
+    padding: 0;
+    margin: 1rem 0;
     top: 75px;
     background-color: rgba(41, 50, 60, 0.5);
-    backdrop-filter: blur(5px);
     display: none;
     transition: all 0.25s;
+    width: 100%;
+    text-align: center;
+
   }
 
   .menu .menu-list {
     flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
+  
+  .menu-list .menu-list-items {
+    padding: 0.8rem 0;
   }
 
   .hamburger {
     display: block;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
 
   .portfolio {
-    padding: 0;
+    padding: 0 1.5rem;
+    margin: 3rem 0;
+  }
+  
+  .portfolio-content {
+    margin-top: 2rem;
+  }
+
+  .port-card .image {
+    width: 100%;
+  }
+
+  .port-card .image img {
+    border-radius: 25px 25px 20px 20px;
+    height: 200px;
+    width: 90%;
+    object-fit: cover;
+    padding-top: 10px;
   }
 
   .about {
@@ -101,64 +201,104 @@
   }
 
   .about .about-text {
-    width: 90%;
-    padding: 1rem;
+    width: auto;
+    padding: 1.5rem;
+  }
+
+  .about .about-image {
+    display: flex;
+    justify-content: center;
   }
 
   .about .about-image img {
-    width: 90%;
+    width: 80%;
+    height: auto;
     padding: 1rem;
   }
 
   .services {
-    padding: 0;
+    padding: 0 1.5rem;
+    margin: 3rem 0;
   }
 
   .my-row {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: stretch;
+    justify-content: center;
     flex-direction: column;
     margin: 2rem 0;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .my-row .my-col {
     text-align: center;
     width: 100%;
   }
+  
+  /* Make all service cards the same height */
+  .services .my-card {
+    height: auto;
+    padding: 1.5rem;
+  }
 
   .contact {
-    padding: 0;
+    padding: 0 1.5rem;
+    margin: 3rem 0;
   }
 
   .contact-content {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    margin: 2rem 0;
   }
 
   .contact-form-container {
-    width: 80%;
+    width: 100%;
   }
 
   .contact-form .form-controls {
     width: 100%;
+    box-sizing: border-box;
   }
 
   .contact-form .form-btn {
     width: 100%;
+    box-sizing: border-box;
   }
 
   .contact-details {
-    width: 80%;
+    width: 100%;
+  }
+  
+  /* Improved footer */
+  .footer {
+    padding: 1.5rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content h4 {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
   }
 
   .footer-menu {
-    padding: 0 2rem;
+    padding: 0;
+    width: 100%;
+  }
+
+  .footer-menu-list {
+    padding-left: 0;
+    justify-content: center;
   }
 
   .footer-list-items {
-    margin: 0;
+    margin: 0 0.5rem;
   }
 }

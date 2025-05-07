@@ -1,14 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+* {
+  box-sizing: border-box;
+  cursor: url('../assets/hand-pointer.svg') 0 0,auto;
+
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #29323c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #697077; 
+  border-radius: 4px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #898e94; 
+}
+
 html {
+  scrollbar-width: thin;
+  scrollbar-color: #697077 #29323c;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 /* Header Navbar Styles */
@@ -19,13 +44,11 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
-  z-index: 1000;
-}
-
-.navbar {
   background-color: rgba(41, 50, 60, 0.5);
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
+  z-index: 1000;
+  padding: 0.5rem 0;
 }
 
 .logo {
@@ -44,6 +67,7 @@ body {
   display: none;
   color: #fff;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .cross-icon {
@@ -53,6 +77,7 @@ body {
 .menu .menu-list {
   display: flex;
   list-style: none;
+  margin: 0;
 }
 
 .menu-list .menu-list-items {
@@ -63,18 +88,12 @@ body {
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
 }
 
-@media screen and (min-width: 856px) and (max-width: 1024px) {
-  .menu-list .menu-list-items {
-    padding: 0.5rem 0.3rem;
-  }
-}
-
 /* Hero Section Styles */
 .hero {
   background-image: linear-gradient(45deg, #29323c, #3a4452);
   color: #fff;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -105,14 +124,20 @@ body {
 }
 
 .about .about-text {
-  width: 450px;
+  width: 50%;
   color: #fff;
   padding: 5rem 1rem 5rem 5rem;
 }
 
+.about .about-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
 .about .about-image img {
-  height: 500px;
-  width: 500px;
+  height: auto;
+  max-width: 100%;
   padding: 5rem 5rem 5rem 1rem;
 }
 
@@ -122,10 +147,15 @@ body {
   padding: 0 5rem;
 }
 
+.portfolio-content {
+  margin-top: 3rem;
+}
+
 .port-card {
   padding: 0 !important;
   background: none !important;
   border: 2px solid #29323c;
+  height: 100%;
 }
 
 .port-card .image {
@@ -133,8 +163,10 @@ body {
 }
 
 .port-card .image img {
+  border-radius: 25px 25px 20px 20px;
   height: 200px;
-  width: 100%;
+  width: 90%;
+  object-fit: cover;
   padding-top: 10px;
 }
 
@@ -148,9 +180,13 @@ body {
   padding: 0 5rem;
 }
 
+.services-content {
+  width: 100%;
+}
+
 .my-row {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   margin: 2rem 0;
 }
@@ -158,6 +194,7 @@ body {
 .my-row .my-col {
   text-align: center;
   width: 30%;
+  display: flex;
 }
 
 .my-card {
@@ -165,10 +202,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   border-radius: 20px;
   background-image: linear-gradient(#29323c, #3a4452, #485566);
-  padding: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.services .my-card {
+  height: 100%;
+}
+
+.services .my-card .small-para {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon {
@@ -179,6 +228,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .icon svg {
@@ -188,33 +238,49 @@ body {
 
 /* Contact section styles */
 .contact {
-  padding: 0 5rem;
+  padding: 0 2rem;
+  margin: 4.8rem 0;
 }
 
 .contact-content {
   display: flex;
+  flex-direction: column;
   margin: 3rem 0;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-form-container {
   width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
+  align-items: center; 
+  width: 100%;
 }
 
 .contact-form .form-controls {
-  width: 80%;
+  width: 100%;
   padding: 10px;
   margin: 1rem 0;
   font-family: "Poppins", sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea.form-controls {
+  resize: vertical;
+  min-height: 150px;
 }
 
 .contact-form .form-btn {
-  width: 83%;
+  width: 100%;
 }
 
 .contact-details {
@@ -228,6 +294,12 @@ body {
   padding: 2rem;
 }
 
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer-list-items {
   display: flex;
   align-items: center;
@@ -237,6 +309,12 @@ body {
   margin: 1rem 1rem 0 1rem;
   border-radius: 50%;
   background-color: #3a4452;
+  transition: all 0.3s ease;
+}
+
+.footer-list-items:hover {
+  transform: translateY(-5px);
+  background-color: #485566;
 }
 
 .footer-links {
@@ -249,15 +327,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .footer-menu {
-  padding: 0 5rem;
+  padding: 0;
+  width: 100%;
 }
 
 .footer-menu .footer-menu-list {
   display: flex;
   list-style: none;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0;
 }
 
 /* utility classes */
