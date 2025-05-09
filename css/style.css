@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  cursor: url('../assets/hand-pointer.svg') 0 0,auto;
+  cursor: url('../assets/svg/hand-pointer.svg') 0 0,auto;
 
 }
 
@@ -231,7 +231,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.icon svg {
+.icon i {
   font-size: 30px;
   color: #fff;
 }
