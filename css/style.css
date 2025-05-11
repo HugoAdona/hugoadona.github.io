@@ -165,7 +165,7 @@ body {
 .port-card .image img {
   border-radius: 25px 25px 20px 20px;
   height: 200px;
-  width: 90%;
+  width: 95%;
   object-fit: cover;
   padding-top: 10px;
 }
