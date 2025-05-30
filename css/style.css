@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  cursor: url('../assets/svg/hand-pointer.svg') 0 0,auto;
+  cursor: url('../assets/svg/arrow-pointer.svg') 0 0, auto;
 
 }
 
@@ -15,12 +15,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #697077; 
-  border-radius: 4px; 
+  background: #697077;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #898e94; 
+  background: #898e94;
 }
 
 html {
@@ -36,7 +36,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Header Navbar Styles */
+/* Navbar Heaader */
 .navbar {
   display: flex;
   align-items: center;
@@ -88,7 +88,7 @@ body {
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
 }
 
-/* Hero Section Styles */
+/* Hero  */
 .hero {
   background-image: linear-gradient(45deg, #29323c, #3a4452);
   color: #fff;
@@ -107,14 +107,7 @@ body {
   margin: 0 5rem;
 }
 
-.hero .intro-buttons {
-  margin: 2rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-/* About section styles */
+/* About */
 .about {
   display: flex;
   align-items: center;
@@ -141,21 +134,16 @@ body {
   padding: 5rem 5rem 5rem 1rem;
 }
 
-/* Portfolio section styles */
+/* Portfolio */
 .portfolio {
   margin: 4.8rem 0;
   padding: 0 5rem;
-}
-
-.portfolio-content {
-  margin-top: 3rem;
 }
 
 .port-card {
   padding: 0 !important;
   background: none !important;
   border: 2px solid #29323c;
-  height: 100%;
 }
 
 .port-card .image {
@@ -163,14 +151,13 @@ body {
 }
 
 .port-card .image img {
-  border-radius: 25px 25px 20px 20px;
   height: 200px;
-  width: 95%;
-  object-fit: cover;
-  padding-top: 10px;
+  width: 100%;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
 }
 
-/* Services section styles */
+/* Services */
 .services {
   display: flex;
   align-items: center;
@@ -236,7 +223,7 @@ body {
   color: #fff;
 }
 
-/* Contact section styles */
+/* Contact */
 .contact {
   padding: 0 2rem;
   margin: 4.8rem 0;
@@ -255,13 +242,13 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center; /
+  align-items: center;/
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   width: 100%;
 }
 
@@ -287,7 +274,7 @@ body {
   width: 50%;
 }
 
-/* Footer Styles */
+/* Footer */
 .footer {
   background-color: #1c242d;
   color: #fff;
@@ -343,7 +330,7 @@ body {
   margin: 0;
 }
 
-/* utility classes */
+/* Utilities */
 .greet-heading {
   font-size: 1.3rem;
   font-weight: lighter;

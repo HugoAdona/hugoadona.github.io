@@ -1,4 +1,4 @@
-/* CSS for tablet devices */
+/* Tablet */
 @media screen and (min-width: 576px) and (max-width: 820px) {
   .logo {
     padding: 0 3rem;
@@ -20,7 +20,6 @@
     transition: all 0.25s;
     width: 100%;
     text-align: center;
-    
   }
 
   .menu .menu-list {
@@ -28,25 +27,13 @@
     width: 100%;
     padding-left: 0;
   }
-  
+
   .menu-list .menu-list-items {
     padding: 0.8rem 0;
   }
 
   .portfolio {
     padding: 0 2rem;
-  }
-
-  .port-card .image {
-    width: 100%;
-  }
-
-  .port-card .image img {
-    border-radius: 25px 25px 20px 20px;
-    height: 200px;
-    width: 90%;
-    object-fit: cover;
-    padding-top: 10px;
   }
 
   .about {
@@ -77,54 +64,54 @@
   .my-row .my-col {
     width: 45%;
   }
-  
-  /* Make service cards the same height */
+
+  /* Same service card height */
   .services .my-card {
     height: 450px;
     display: flex;
     flex-direction: column;
   }
-  
+
   .services .small-para {
     flex-grow: 1;
     display: flex;
     align-items: center;
   }
-  
-  /* Center contact form */
+
+  /* Contact form */
   .contact {
     padding: 0 2rem;
   }
-  
+
   .contact-content {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .contact-form-container {
     width: 80%;
   }
-  
+
   .contact-form .form-controls {
     width: 100%;
   }
-  
+
   .contact-form .form-btn {
     width: 100%;
   }
-  
-  /* Social media icons */
+
+  /* Icons */
   .social-links {
     width: 100%;
   }
-  
+
   .footer-menu-list {
     padding-left: 0;
     justify-content: center;
   }
 }
 
-/* CSS for mobile devices */
+/* Mobile */
 @media screen and (min-width: 280px) and (max-width: 575px) {
   .sub-heading {
     color: #fff9f9cc;
@@ -141,7 +128,7 @@
   .logo {
     padding: 0 1.5rem;
   }
-  
+
   .logo .logo-heading {
     font-size: 1.5rem;
   }
@@ -157,7 +144,6 @@
     transition: all 0.25s;
     width: 100%;
     text-align: center;
-
   }
 
   .menu .menu-list {
@@ -165,7 +151,7 @@
     width: 100%;
     padding-left: 0;
   }
-  
+
   .menu-list .menu-list-items {
     padding: 0.8rem 0;
   }
@@ -179,21 +165,9 @@
     padding: 0 1.5rem;
     margin: 3rem 0;
   }
-  
+
   .portfolio-content {
     margin-top: 2rem;
-  }
-
-  .port-card .image {
-    width: 100%;
-  }
-
-  .port-card .image img {
-    border-radius: 25px 25px 20px 20px;
-    height: 200px;
-    width: 90%;
-    object-fit: cover;
-    padding-top: 10px;
   }
 
   .about {
@@ -234,8 +208,8 @@
     text-align: center;
     width: 100%;
   }
-  
-  /* Make all service cards the same height */
+
+  /* Same service card height */
   .services .my-card {
     height: auto;
     padding: 1.5rem;
@@ -270,18 +244,18 @@
   .contact-details {
     width: 100%;
   }
-  
-  /* Improved footer */
+
+  /* Footer */
   .footer {
     padding: 1.5rem;
   }
-  
+
   .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .footer-content h4 {
     margin-bottom: 1rem;
     font-size: 0.9rem;

@@ -1,9 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.getElementById("hamburger");
   const menu = document.querySelector(".menu");
   const menuLinks = document.querySelectorAll(".menu-list-items a");
 
-  // Toggle menu function
+  // Toggle menu
   hamburger.addEventListener("click", function () {
     const hamIcon = this.querySelector(".hamburger-icon");
     const crossIcon = this.querySelector(".cross-icon");
@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // Close menu when clicking on menu links
-  menuLinks.forEach(link => {
-    link.addEventListener("click", function() {
+  // Close menu when clicking on links
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", function () {
       if (window.innerWidth <= 820) {
         const hamIcon = hamburger.querySelector(".hamburger-icon");
         const crossIcon = hamburger.querySelector(".cross-icon");
@@ -31,40 +31,40 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  // Ensure all service cards have the same height in each row
+  // All service cards have the same height
   function equalizeCardHeights() {
     if (window.innerWidth > 576) {
-      const rows = document.querySelectorAll('.services .my-row');
-      
-      rows.forEach(row => {
-        const cards = row.querySelectorAll('.my-card');
+      const rows = document.querySelectorAll(".services .my-row");
+
+      rows.forEach((row) => {
+        const cards = row.querySelectorAll(".my-card");
         let maxHeight = 0;
-        
-        // Reset heights first
-        cards.forEach(card => {
-          card.style.height = 'auto';
+
+        // Reset heights
+        cards.forEach((card) => {
+          card.style.height = "auto";
         });
-        
-        // Find the tallest card
-        cards.forEach(card => {
+
+        // Find tallest card
+        cards.forEach((card) => {
           maxHeight = Math.max(maxHeight, card.offsetHeight);
         });
-        
-        // Set all cards to the height of the tallest
-        cards.forEach(card => {
-          card.style.height = maxHeight + 'px';
+
+        // Set cards to the height of the tallest
+        cards.forEach((card) => {
+          card.style.height = maxHeight + "px";
         });
       });
     } else {
-      // Reset heights on mobile
-      const cards = document.querySelectorAll('.services .my-card');
-      cards.forEach(card => {
-        card.style.height = 'auto';
+      // Mobile heights reset
+      const cards = document.querySelectorAll(".services .my-card");
+      cards.forEach((card) => {
+        card.style.height = "auto";
       });
     }
   }
 
-  // Run on page load and window resize
-  window.addEventListener('load', equalizeCardHeights);
-  window.addEventListener('resize', equalizeCardHeights);
+  // Page load and window resize
+  window.addEventListener("load", equalizeCardHeights);
+  window.addEventListener("resize", equalizeCardHeights);
 });
