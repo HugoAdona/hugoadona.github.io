@@ -13,7 +13,7 @@
     position: absolute;
     right: 0;
     padding: 0 3rem;
-    margin: 1.5rem 0;
+    margin: 1.25rem 0;
     top: 75px;
     background-color: rgba(41, 50, 60, 0.5);
     display: none;
@@ -36,6 +36,10 @@
     padding: 0 2rem;
   }
 
+  .port-card:hover {
+    transform: translateY(-5px);
+  }
+
   .about {
     flex-direction: column;
   }
@@ -49,6 +53,10 @@
     padding: 2rem;
     width: 80%;
     height: auto;
+  }
+
+  .about .about-image::after {
+    height: 80px;
   }
 
   .services {
@@ -137,7 +145,7 @@
     position: absolute;
     right: 0;
     padding: 0;
-    margin: 1.5rem 0;
+    margin: 1.25rem 0;
     top: 75px;
     background-color: rgba(41, 50, 60, 0.5);
     display: none;
@@ -166,8 +174,8 @@
     margin: 3rem 0;
   }
 
-  .portfolio-content {
-    margin-top: 2rem;
+  .port-card:hover {
+    transform: translateY(-3px);
   }
 
   .about {
@@ -188,6 +196,10 @@
     width: 80%;
     height: auto;
     padding: 1rem;
+  }
+
+  .about .about-image::after {
+    height: 60px;
   }
 
   .services {

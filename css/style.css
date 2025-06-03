@@ -132,6 +132,20 @@ body {
   height: auto;
   max-width: 100%;
   padding: 5rem 5rem 5rem 1rem;
+  -webkit-mask: linear-gradient(to bottom, black 65%, transparent 85%);
+  mask: linear-gradient(to bottom, black 65%, transparent 85%);
+}
+
+.certificates-text {
+  font-weight: bold;
+}
+
+.certificates-list-container {
+  padding-left: 2.5rem;
+}
+
+.certificates-list {
+  list-style-type: square;
 }
 
 /* Portfolio */
@@ -144,10 +158,23 @@ body {
   padding: 0 !important;
   background: none !important;
   border: 2px solid #29323c;
+  transition: all 0.3s ease;
+  transform: translateY(0);
 }
 
+/* Card hover */
+.port-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(41, 50, 60, 0.3);
+  border-color: #4b5664;
+}
+
+/* Image container hover */
 .port-card .image {
   width: 100%;
+  overflow: hidden;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
 }
 
 .port-card .image img {
@@ -155,6 +182,24 @@ body {
   width: 100%;
   border-top-right-radius: 18px;
   border-top-left-radius: 18px;
+  transition: all 0.3s ease;
+}
+
+/* Image hover */
+.port-card:hover .image img {
+  transform: scale(1.05);
+}
+
+.port-card .greet-heading,
+.port-card .small-para {
+  transition: all 0.3s ease;
+  opacity: 0.85;
+}
+
+.port-card:hover .greet-heading,
+.port-card:hover .small-para {
+  opacity: 1;
+  transform: translateY(-2px);
 }
 
 /* Services */
