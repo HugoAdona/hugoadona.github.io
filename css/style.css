@@ -136,16 +136,26 @@ body {
   mask: linear-gradient(to bottom, black 65%, transparent 85%);
 }
 
-.certificates-text {
-  font-weight: bold;
-}
-
 .certificates-list-container {
-  padding-left: 2.5rem;
+  padding-left: 2rem;
 }
 
 .certificates-list {
   list-style-type: square;
+}
+
+.certificates-link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.certificates-link:hover {
+  color: #4b5664;
+}
+
+.certificates-link i {
+  margin-left: 0.5rem;
 }
 
 /* Portfolio */
