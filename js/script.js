@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const menu = document.querySelector(".menu");
   const menuLinks = document.querySelectorAll(".menu-list-items a");
 
-  // Toggle menu
   hamburger.addEventListener("click", function () {
     const hamIcon = this.querySelector(".hamburger-icon");
     const crossIcon = this.querySelector(".cross-icon");
@@ -18,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Close menu when clicking on links
   menuLinks.forEach((link) => {
     link.addEventListener("click", function () {
       if (window.innerWidth <= 820) {
@@ -31,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // All service cards have the same height
   function equalizeCardHeights() {
     if (window.innerWidth > 576) {
       const rows = document.querySelectorAll(".services .my-row");
@@ -40,23 +37,19 @@ document.addEventListener("DOMContentLoaded", function () {
         const cards = row.querySelectorAll(".my-card");
         let maxHeight = 0;
 
-        // Reset heights
         cards.forEach((card) => {
           card.style.height = "auto";
         });
 
-        // Find tallest card
         cards.forEach((card) => {
           maxHeight = Math.max(maxHeight, card.offsetHeight);
         });
 
-        // Set cards to the height of the tallest
         cards.forEach((card) => {
           card.style.height = maxHeight + "px";
         });
       });
     } else {
-      // Mobile heights reset
       const cards = document.querySelectorAll(".services .my-card");
       cards.forEach((card) => {
         card.style.height = "auto";
@@ -64,7 +57,44 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Page load and window resize
   window.addEventListener("load", equalizeCardHeights);
   window.addEventListener("resize", equalizeCardHeights);
+});
+
+const form = document.querySelector(".contact-form");
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); // Prevent default form submission
+  const name = form.querySelector("#name").value.trim();
+  const email = form.querySelector("#email").value.trim();
+  const message = form.querySelector("#message").value.trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  form.querySelectorAll(".error-message").forEach((error) => {
+    error.setAttribute("hidden", "");
+  });
+
+  let isValid = true;
+
+  if (!name) {
+    form.querySelector("#name-error").removeAttribute("hidden");
+    isValid = false;
+  }
+
+  if (!email || !emailRegex.test(email)) {
+    form.querySelector("#email-error").removeAttribute("hidden");
+    isValid = false;
+  }
+
+  if (!message) {
+    form.querySelector("#message-error").removeAttribute("hidden");
+    isValid = false;
+  }
+
+  if (isValid) {
+    const subject = encodeURIComponent("Contact Form Submission");
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+    );
+    window.location.href = `mailto:adonahugo@gmail.com?subject=${subject}&body=${body}`;
+  }
 });

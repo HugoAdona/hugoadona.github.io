@@ -36,7 +36,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Navbar Heaader */
 .navbar {
   display: flex;
   align-items: center;
@@ -88,7 +87,6 @@ body {
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
 }
 
-/* Hero  */
 .hero {
   background-image: linear-gradient(45deg, #29323c, #3a4452);
   color: #fff;
@@ -107,7 +105,6 @@ body {
   margin: 0 5rem;
 }
 
-/* About */
 .about {
   display: flex;
   align-items: center;
@@ -158,7 +155,6 @@ body {
   margin-left: 0.5rem;
 }
 
-/* Portfolio */
 .portfolio {
   margin: 4.8rem 0;
   padding: 0 5rem;
@@ -172,14 +168,12 @@ body {
   transform: translateY(0);
 }
 
-/* Card hover */
 .port-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(41, 50, 60, 0.3);
   border-color: #4b5664;
 }
 
-/* Image container hover */
 .port-card .image {
   width: 100%;
   overflow: hidden;
@@ -195,7 +189,6 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Image hover */
 .port-card:hover .image img {
   transform: scale(1.05);
 }
@@ -213,7 +206,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Services */
 .services {
   display: flex;
   align-items: center;
@@ -279,7 +271,6 @@ body {
   color: #fff;
 }
 
-/* Contact */
 .contact {
   padding: 0 2rem;
   margin: 4.8rem 0;
@@ -311,7 +302,7 @@ body {
 .contact-form .form-controls {
   width: 100%;
   padding: 10px;
-  margin: 1rem 0;
+  margin: 0;
   font-family: "Poppins", sans-serif;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -330,7 +321,33 @@ body {
   width: 50%;
 }
 
-/* Footer */
+.form-group {
+  margin: 0;
+  width: 100%;
+}
+
+.form-group label {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.error-message[hidden] {
+  display: none;
+}
+
+.form-controls:invalid:focus+.error-message {
+  display: block;
+}
+
 .footer {
   background-color: #1c242d;
   color: #fff;
@@ -386,9 +403,8 @@ body {
   margin: 0;
 }
 
-/* Utilities */
 .greet-heading {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: lighter;
   margin: 0;
   letter-spacing: 1px;
