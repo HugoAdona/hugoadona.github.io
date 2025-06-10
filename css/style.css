@@ -138,7 +138,7 @@ body {
 }
 
 .certificates-list {
-  list-style-type: square;
+  list-style-type: circle;
 }
 
 .certificates-link {
