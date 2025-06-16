@@ -203,7 +203,23 @@ body {
 .port-card:hover .greet-heading,
 .port-card:hover .small-para {
   opacity: 1;
-  transform: translateY(-2px);
+  transform: translateY(-1.5px);
+}
+
+.portfolio-link {
+  text-decoration: none;
+  color: #4b5664;
+  transition: all 0.3s ease;
+  margin-bottom: 1.25rem;
+}
+
+.portfolio-link:hover {
+  transform: translateY(-3px);
+  color: #29323c;
+}
+
+.portfolio-link i {
+  margin-left: 0.25rem;
 }
 
 .services {
