@@ -438,6 +438,28 @@ body {
   transform: translateY(-3px);
 }
 
+.secret-link i {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #29323c;
+  color: #fff;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: small;
+  transition: all 0.3s ease;
+}
+
+.secret-link i:hover {
+  background-color: #4b5664;
+  transform: translateY(-3px);
+}
+
+.secret-link:active i {
+  transform: translateY(0);
+}
+
 .greet-heading {
   font-size: 1.25rem;
   font-weight: lighter;
