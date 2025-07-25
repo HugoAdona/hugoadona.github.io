@@ -35,10 +35,6 @@
 		padding: 0 2rem;
 	}
 
-	.port-card:hover {
-		transform: translateY(-5px);
-	}
-
 	.about {
 		flex-direction: column;
 	}
@@ -177,10 +173,6 @@
 	.portfolio {
 		padding: 0 1.5rem;
 		margin: 3rem 0;
-	}
-
-	.port-card:hover {
-		transform: translateY(-3px);
 	}
 
 	.about {
