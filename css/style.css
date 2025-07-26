@@ -2,7 +2,7 @@
 
 * {
 	box-sizing: border-box;
-	cursor: url('../assets/svg/arrow-pointer.svg') 0 0, auto;
+	cursor: url('../assets/icons/arrow-pointer.svg') 0 0, auto;
 }
 
 ::-webkit-scrollbar {
@@ -130,6 +130,10 @@ body {
 	padding: 5rem 5rem 5rem 1rem;
 	-webkit-mask: linear-gradient(to bottom, black 65%, transparent 85%);
 	mask: linear-gradient(to bottom, black 65%, transparent 85%);
+}
+
+.certificates-text {
+	font-size: 1.75rem;
 }
 
 .certificates-list-container {
@@ -319,15 +323,8 @@ body {
 }
 
 .form-group {
-	margin: 0;
+	margin: 12px;
 	width: 100%;
-}
-
-.form-group label {
-	color: #fff;
-	font-size: 1rem;
-	margin-bottom: 0.5rem;
-	display: block;
 }
 
 .error-message {
